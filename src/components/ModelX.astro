@@ -1,16 +1,16 @@
 ---
-import Section from './Section.astro';
+import Section from "./Section.astro";
 ---
 
 <Section
-  title="Model S"
-  subtitle="Starting at $38,740"
+  title="Model X"
+  subtitle="Starting at $32,740"
   color="black"
-  id="model-s"
+  id="model-x"
 >
   <div slot="footer" class="gap-x-6 flex mx-auto">
     <a
-      class="bg-[#171a20]/70 text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors"
+    class="bg-[#171a20]/70 text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors"
       href="#"
     >
       Custom Order</a
@@ -19,24 +19,24 @@ import Section from './Section.astro';
       class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black"
       href="#"
     >
-      Demo Drive</a
+      Learn More</a
     >
   </div>
 
   <img
     slot="background"
-    alt="Model S"
+    alt="Model X"
     class="h-full w-full object-cover object-center"
-    src="model-s.avif"
-    id="bg-image-models"
+    src="model-x.avif"
+    id="bg-image-modelx"
   />
 </Section>
 
 <script>
   function isEdge() {
     if (
-      navigator.userAgent.indexOf('Edge') > -1 ||
-      navigator.userAgent.indexOf('Edg') > -1
+      navigator.userAgent.indexOf("Edge") > -1 ||
+      navigator.userAgent.indexOf("Edg") > -1
     ) {
       return true;
     } else {
@@ -44,13 +44,11 @@ import Section from './Section.astro';
     }
   }
 
-  var imageElement = document.querySelector(
-    '#bg-image-models'
-  ) as HTMLImageElement;
+  var imageElement = document.querySelector("#bg-image-modelx") as HTMLImageElement;
 
   if (isEdge()) {
-    imageElement.src = 'model-s.webp';
+    imageElement.src = "model-x.webp";
   } else {
-    imageElement.src = 'model-s.avif';
+    imageElement.src = "model-x.avif";
   }
 </script>
